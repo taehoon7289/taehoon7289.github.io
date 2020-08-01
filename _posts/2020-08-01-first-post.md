@@ -12,8 +12,6 @@ function welcome(name):
 welcome('You')
 ​```
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+이 블로그는 [페이지][advice-page-url] 를 참고하여 생성했고, 도움되었습니다.
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+[advice-page-url]: https://dreamgonfly.github.io/blog/jekyll-remote-theme/
