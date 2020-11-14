@@ -1,3 +1,9 @@
+---
+title: "docker-compose 운영서버 환경 구축"
+date: 2020-11-14 19:01
+categories: linux
+---
+
 ## 인스턴스 Asia/Seoul 로 시간 설정
 <pre>
   <code>
