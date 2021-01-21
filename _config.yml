@@ -100,7 +100,7 @@ author:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Developer taehoon website."
   location         : "Somewhere"
-  email            :
+  email            : "taehoon7289@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
