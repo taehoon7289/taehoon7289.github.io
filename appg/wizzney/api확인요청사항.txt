@@ -1,0 +1,4 @@
+# api 확인요청사항
+1-2-2 회원가입 /api/user/add
+1-2-5 소셜로그인 회원가입 (추가 정보 입력) /api/user/snsSignUp
+phone 값 입력 필드 필요
