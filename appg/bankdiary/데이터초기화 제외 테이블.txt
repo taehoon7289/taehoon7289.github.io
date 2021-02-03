@@ -1,1 +1,15 @@
-dd
+# 7개 
+
+tblAppVersion
+
+tblClientMaster
+
+tblExpertMaster
+
+tblTicketInfo
+
+tblUserMaster
+
+tblZipCity
+
+tblZipProvince
