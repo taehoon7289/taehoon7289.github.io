@@ -1,5 +1,3 @@
-# 8개 
-
 tblAdminMaster
 
 tblAppVersion
@@ -7,6 +5,8 @@ tblAppVersion
 tblClientMaster
 
 tblExpertMaster
+
+tblTerms
 
 tblTicketInfo
 
