@@ -1,4 +1,6 @@
-# 7개 
+# 8개 
+
+tblAdminMaster
 
 tblAppVersion
 
