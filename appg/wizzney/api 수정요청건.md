@@ -39,4 +39,6 @@ authorizePageUri 페이지 로드해서 url이 redirect 되는 형태라 respons
 
 # 2021.02.05
 
-
+1. /api/user/sendAuthValueByEmail 호출시 
+{"resultCode":"0000","resultMsg":"인증번호 저장 되었습니다."} 응답이 오는데
+실제로 메일이 안오는데 확인 요청드립니다.
