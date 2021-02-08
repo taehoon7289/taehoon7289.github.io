@@ -42,3 +42,14 @@ authorizePageUri 페이지 로드해서 url이 redirect 되는 형태라 respons
 1. /api/user/sendAuthValueByEmail 호출시 
 {"resultCode":"0000","resultMsg":"인증번호 저장 되었습니다."} 응답이 오는데
 실제로 메일이 안오는데 확인 요청드립니다.
+
+# 2021.02.08
+1. 
+1:1문의 등록/수정 (/api/customer/myquestion/save) 호출시 500 : Internal Server Error 라는데 확인해주실수 있나요?
+Authorization: eyJ0eXAiOiJqd3QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJXSVpaTkVZMjEwMjAzVkp0dUJPIiwiaWF0IjoxNjEyNzQ0Nzg0LCJleHAiOjE2MTI4MzExODR9.rHJR1fOb0slTy1ItGJ8wo-rVMCzA-KPb49TP_hFwuxI
+
+[위즈니 구독]
+http://106.240.232.36:8081/
+내부 확인용 url 입니다.
+
+그리고 1:1문의등록/수정쪽에 파일 업로드도 있던데 회원가입때처럼 multipart formdata 식으로 ???
