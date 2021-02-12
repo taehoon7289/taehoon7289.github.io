@@ -1,1 +1,2 @@
-dd
+1. aws route53 구입 (2021.02.12 1년짜리)
+- black-mango.com
