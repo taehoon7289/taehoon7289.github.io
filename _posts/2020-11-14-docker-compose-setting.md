@@ -4,14 +4,6 @@ date: 2020-11-14 19:01
 categories: linux
 ---
 
-## 인스턴스 Asia/Seoul 로 시간 설정
-<pre>
-  <code>
-    $ ln -sf /usr/share/zoneinfo/Asia/Seoul /etc/localtime
-  </code>
-</pre>
-
-
 ## docker-compose 설치 및 사용방법
 - centOS 기준이며 yum 으로 패키지 설치 과정
 - yum 사용시 root권한이 필요하므로 $ sudo -s 으로 root권한으로 진행 
