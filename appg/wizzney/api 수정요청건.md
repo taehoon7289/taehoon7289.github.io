@@ -58,3 +58,16 @@ http://106.240.232.36:8081/
 1. 파티생성시 ('/api/party/add')에 {"resultCode":"9999","resultMsg":"휴대폰 인증, 계좌 인증을 완료해 주세요."} 리턴오는데 회원가입시 휴대폰인증, 계좌번호 입력했는데도 인증해야되나요? 현재 제 계정 taehoon.kim@appg.co.kr이며, 로그인시  authType: "2" 로 오고 있습니다.
 
 2. 카테고리가져오기(/api/common/categoryList) 데이터로 넷플릭스, 왓차플레이, 웨이브 등 카테고리 보여줄때 url 값이 로고 이미지 url 의미하는건가요??
+
+# 2021.02.16
+1. 파티상세페이지 (/api/party/detail) 호출시 500: Internal Server Error 응답오는데 확인가능하실까요? 
+
+Authorization: eyJ0eXAiOiJqd3QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJXSVpaTkVZMjEwMjE1M1pXUlUxIiwiaWF0IjoxNjEzNDQ5MTM5LCJleHAiOjE2MTM1MzU1Mzl9.6-C9na3OFjuNW7_VPRECLlocg55nMNAXxX15p_Hlg6I
+
+parameter:
+{
+    "partyNo": "72"
+}
+
+2. 메인페이지에서 '리뷰' 부분이 '공지'로 변경되었다고 하는데, 메인페이지 api(/api/main/subscribeShare) 호출시 review 데이터 그대로 바인딩 하면 될까요?
+
