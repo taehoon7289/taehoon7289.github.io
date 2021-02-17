@@ -82,3 +82,5 @@ parameter : {"partyNo":"81","partyAgree":"Y"}
 subscriberInfo: {nick: "카카오앱지", login_type: null, sns_id: null, cash: "0", point: "0"}
 login_type 과 sns_id가 null 로 오고 있는데 확인 요청 드립니다.
 Authorization: eyJ0eXAiOiJqd3QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJXSVpaTkVZMjEwMjE3UEIyM2V3IiwiaWF0IjoxNjEzNTM1MTAyLCJleHAiOjE2MTM2MjE1MDJ9.O3OB2_EDuH7Crpmzhaid_S9yC5Sq-_1SWKg7z019K68
+
+3. 파티 결제시 (/api/cash/settlePayload) api 호출할때 (신용카드,위즈캐시) 두가지 결제방식 모두 /api/cash/settlePayload 호출하는건가요?
