@@ -74,3 +74,6 @@ parameter:
 3. 파티 상세(/api/party/detail)에서 카테고리 구분값 추가해주실수 있나요? 넷플릭스, 왓챠 등 그리고 로고 이미지는 url로 받는건가요? 아니면 이미지 수급 받나요?
 
 # 2021.02.17
+1. 파티 결제 페이지(/api/party/subscribe) api 호출시 {resultCode: "9999", resultMsg: "Fail", partyInfo: null, subscriberInfo: null} 응답오는데 어떤게 문제인지 확인가능할까요?
+Authorization: eyJ0eXAiOiJqd3QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJXSVpaTkVZMjEwMjE2b1JjUUc2IiwiaWF0IjoxNjEzNTIyMDgxLCJleHAiOjE2MTM2MDg0ODF9.EvNAwxTdfEDzUlLARuL6wym5CrFhnEFEy1L2v9Ub3gI
+parameter : {"partyNo":"81","partyAgree":"Y"} 
