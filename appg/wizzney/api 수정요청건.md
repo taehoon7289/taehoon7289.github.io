@@ -97,7 +97,7 @@ Authorization: eyJ0eXAiOiJqd3QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJXSVpaTkVZMjEwMjE3
 
 # 2021.02.19
 
-1.댓글 수정, 삭제시 본인글 체크 해야할꺼 같은데 로그인한 본인체크할수 있는 값을 댓글 리스트(/api/wizzpedia/getCommentList) 추가 필요
+1. 댓글 수정, 삭제시 본인글 체크 해야할꺼 같은데 로그인한 본인체크할수 있는 값을 댓글 리스트(/api/wizzpedia/getCommentList) 추가 필요
 
 2. 댓글 작성(/api/wizzpedia/writeComment) 최대 500자까지 등록인데 500자로 호출하면 
 Data too long for column 'comment' at row 1
@@ -106,5 +106,8 @@ Data too long for column 'comment' at row 1
 3. sns 계정으로 댓글작성시 name 이 null 로 오고 있음.
 {"resultCode":null,"resultMsg":null,"list":[{"seq":93,"id":16511,"category":"wavve","wizzneyId":"WIZZNEY210217PB23ew","name":null,"comment":"5점5점","starRating":5,"wrtime":"2021-02-18 17:46:13","status":"NONE"}]}
 
+4. 댓글 수정 api는 api 규약서에 없어서, api 추가 요청
+
+5. 
 
 
