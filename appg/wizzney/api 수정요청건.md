@@ -103,3 +103,7 @@ Authorization: eyJ0eXAiOiJqd3QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJXSVpaTkVZMjEwMjE3
 Data too long for column 'comment' at row 1
 에러 발생하여 확인 필요
 
+3. sns 계정으로 댓글작성시 name 이 null 로 오고 있음.
+
+
+
