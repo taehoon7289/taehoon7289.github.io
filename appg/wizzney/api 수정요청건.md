@@ -93,4 +93,13 @@ Authorization: eyJ0eXAiOiJqd3QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJXSVpaTkVZMjEwMjE3
 
 # 2021.02.18
 
-1. 
+1. api_규격서3 에 2-3 상세페이지 Base Request URL이 2-1.총개수 url로 되어있는데 2-3 상세페이지 Base Request URL 어떻게 되는지 확인요청드립니다.
+
+# 2021.02.19
+
+1.댓글 수정, 삭제시 본인글 체크 해야할꺼 같은데 로그인한 본인체크할수 있는 값을 댓글 리스트(/api/wizzpedia/getCommentList) 추가 필요
+
+2. 댓글 작성(/api/wizzpedia/writeComment) 최대 500자까지 등록인데 500자로 호출하면 
+Data too long for column 'comment' at row 1
+에러 발생하여 확인 필요
+
