@@ -104,6 +104,7 @@ Data too long for column 'comment' at row 1
 에러 발생하여 확인 필요
 
 3. sns 계정으로 댓글작성시 name 이 null 로 오고 있음.
+{"resultCode":null,"resultMsg":null,"list":[{"seq":93,"id":16511,"category":"wavve","wizzneyId":"WIZZNEY210217PB23ew","name":null,"comment":"5점5점","starRating":5,"wrtime":"2021-02-18 17:46:13","status":"NONE"}]}
 
 
 
