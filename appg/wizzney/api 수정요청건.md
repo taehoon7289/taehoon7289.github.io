@@ -90,3 +90,7 @@ Authorization: eyJ0eXAiOiJqd3QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJXSVpaTkVZMjEwMjE3
 {search: "설국", page: 1, category: "netflix"} 또는 {search: "", page: 1, category: ""} 이외에 다른 카테고리로도 호출해봤습니다.
 
 5. 파티희망게시판 파티생성 관련 api리스트문서나 api규격서 문서에서 안보이는데 어디서 확인가능할까요?
+
+# 2021.02.18
+
+1. 
