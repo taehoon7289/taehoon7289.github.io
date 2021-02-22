@@ -116,3 +116,7 @@ Data too long for column 'comment' at row 1
 7. sort에 LONG, SHORT 넣을때 500error 발생하는데 확인가능할까요?
 
 8. 비로그인일경우에도 위즈피디아 검색 및 검색 결과, 파티 희망 게시판 페이지 접근가능이라 authrization 값 없이도 위즈피디아 리스트(/api/wizzpedia/searchWizzpedia), 파티희망게시판 리스트(/api/party/hopeList) 호출가능해야할거같은데 현재 Fail 로 응답이오고 있어서 확인 요청 드립니다.
+
+# 2021.02.22
+
+1. 파티희망게시판 상세(/api/party/partyHopeDetail) 도 비로그인시에 호출 가능하게 요청드립니다.
