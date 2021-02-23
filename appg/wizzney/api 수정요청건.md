@@ -137,4 +137,4 @@ parameter : {"phone":"01050957289"}
 
 1. 개인정보 확인('/api/myPage/myUserInfo/detail') parameter: {havePwYn: 0, pw: "qwer1234@"} 비밀번호가 일치하는경우이지만, {"resultCode":null,"resultMsg":null,"userInfo":null} 응답오며, 비밀번호가 일치하지 않는경우, {"resultCode":"9999","resultMsg":"Fail","userInfo":null} 로 오고 있어서 확인 요청.
 
-2. 개인정보수정관련하여 본인인증시 ('/api/auth/niceAuthPop') 호출 parameter: {"callType":1,"rtnUrl":"http://106.240.232.36:8081/regist/success","failRtnUrl":"http://106.240.232.36:8081/regist/fail"} 로 호출할경우, https://black-payment.wizzney.com/api/auth/niceAuthSuccess로 페이지 이동하고 있음. callType: 0 인 회원가입 경우엔 정상적으로 rtnUrl 로 이동하고 있음.
+2. 개인정보수정관련하여 본인인증시 ('/api/auth/niceAuthPop') 호출 parameter: {"callType":1,"rtnUrl":"http://106.240.232.36:8081/my-info/success","failRtnUrl":"http://106.240.232.36:8081/my-info/fail"} 로 호출할경우, https://black-payment.wizzney.com/api/auth/niceAuthSuccess로 페이지 이동하고 있음. callType: 0 인 회원가입 경우엔 정상적으로 rtnUrl 로 이동하고 있음.
