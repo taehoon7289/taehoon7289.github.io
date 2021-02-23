@@ -132,3 +132,9 @@ Data too long for column 'comment' at row 1
 4. 개인정보 수정 – 휴대폰 인증번호 전송 (/api/myPage/myUserInfo/sendAuthValue) 호출시 {"resultCode":"0000","resultMsg":"인증번호 저장 되었습니다."} 응답오지만 실제 인증번호는 발송이 안되는거 같은데 확인요청 드립니다.
 Authorization: eyJ0eXAiOiJqd3QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJXSVpaTkVZMjEwMjE1M1pXUlUxIiwiaWF0IjoxNjE0MDYxNjA2LCJleHAiOjE2MTQxNDgwMDZ9.sa10jZtIEwwWtZfUHb2cbgHz_8gHUem7CyTVvBWa0dc
 parameter : {"phone":"01050957289"}
+
+# 2021.02.24
+
+1. 개인정보 확인('/api/myPage/myUserInfo/detail') parameter: {havePwYn: 0, pw: "qwer1234@"} 비밀번호가 일치하는경우이지만, {"resultCode":null,"resultMsg":null,"userInfo":null} 응답오며, 비밀번호가 일치하지 않는경우, {"resultCode":"9999","resultMsg":"Fail","userInfo":null} 로 오고 있어서 확인 요청.
+
+2. 개인정보수정관련하여 본인인증시 ('/api/auth/niceAuthPop') 호출 parameter: {"callType":1,"rtnUrl":"http://106.240.232.36:8081/regist/success","failRtnUrl":"http://106.240.232.36:8081/regist/fail"} 로 호출할경우, https://black-payment.wizzney.com/api/auth/niceAuthSuccess로 페이지 이동하고 있음. callType: 0 인 회원가입 경우엔 정상적으로 rtnUrl 로 이동하고 있음.
