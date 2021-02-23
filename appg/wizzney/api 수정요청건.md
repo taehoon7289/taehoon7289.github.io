@@ -128,3 +128,7 @@ Data too long for column 'comment' at row 1
 2. 본인인증이나 sns 로그인때처럼 rtnUrl 값이 필요한데 pnextPUrl, pcancPUrl 값을 프론트에서 변경해서 (ex: http://106.240.232.36:8081/settle/next, http://106.240.232.36:8081/settle/cancel) settleUrl 페이지 호출 해도 결제처리에 문제가 없을지 확인요청드립니다.
 
 3. pnextPUrl = http://106.240.232.36:8081/settle/next, pcancPUrl = http://106.240.232.36:8081/settle/cancel 변경해서 확인했을경우 settlebank 결제 완료후에 세틀뱅크쪽에서 http://106.240.232.36:8081/settle/next 를 호출해줄때 POST 로 호출해서 서버쪽에서 받아야할거같습니다.
+
+4. 개인정보 수정 – 휴대폰 인증번호 전송 (/api/myPage/myUserInfo/sendAuthValue) 호출시 {"resultCode":"0000","resultMsg":"인증번호 저장 되었습니다."} 응답오지만 실제 인증번호는 발송이 안되는거 같은데 확인요청 드립니다.
+Authorization: eyJ0eXAiOiJqd3QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJXSVpaTkVZMjEwMjE1M1pXUlUxIiwiaWF0IjoxNjE0MDYxNjA2LCJleHAiOjE2MTQxNDgwMDZ9.sa10jZtIEwwWtZfUHb2cbgHz_8gHUem7CyTVvBWa0dc
+parameter : {"phone":"01050957289"}
