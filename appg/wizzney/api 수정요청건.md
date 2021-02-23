@@ -120,3 +120,11 @@ Data too long for column 'comment' at row 1
 # 2021.02.22
 
 1. 파티희망게시판 상세(/api/party/partyHopeDetail) 도 비로그인시에 호출 가능하게 요청드립니다.
+
+# 2021.02.23
+
+1. 파티 결제 (카드) ('/api/cash/settlePayload') 호출해서 settleUrl 값으로 세틀뱅크결제 페이지 이동시 오류페이지가 뜨는데 확인 가능할까요?
+
+2. 본인인증이나 sns 로그인때처럼 rtnUrl 값이 필요한데 pnextPUrl, pcancPUrl 값을 프론트에서 변경해서 (ex: http://106.240.232.36:8081/settle/next, http://106.240.232.36:8081/settle/cancel) settleUrl 페이지 호출 해도 결제처리에 문제가 없을지 확인요청드립니다.
+
+3. pnextPUrl = http://106.240.232.36:8081/settle/next, pcancPUrl = http://106.240.232.36:8081/settle/cancel 변경해서 확인했을경우 settlebank 결제 완료후에 세틀뱅크쪽에서 http://106.240.232.36:8081/settle/next 를 호출해줄때 POST 로 호출해서 서버쪽에서 받아야할거같습니다.
