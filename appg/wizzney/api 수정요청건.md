@@ -143,3 +143,9 @@ parameter : {"phone":"01050957289"}
 parameter: {"POid":"WIZZNEY210216oRcQG6-95-20210224150624-100-100","partyNo":"95"}
 Authorization: eyJ0eXAiOiJqd3QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJXSVpaTkVZMjEwMjE2b1JjUUc2IiwiaWF0IjoxNjE0MTQ1MzQ0LCJleHAiOjE2MTQyMzE3NDR9.FZtz2z9nHIDpG9qFwgEHBTIIz2hCYc0gckEPX7oK3jc
 
+4. 개인정보확인 (/api/myPage/myUserInfo/detail) 응답데이터중에 
+1. userInfo 중 profile url로 이미지가 나오지 않고 있음.
+profile: "https://black-file.wizzney.com/img/wizzney/20210265_20210224152139.jpg"
+2. 개인정보변경('/api/myPage/myUserInfo/update') 한후 로그인(/api/user/login)한후에 profile: null 로 들어오고 있음.
+
+개인정보변경('/api/myPage/myUserInfo/update')으로 변경후에 나온 사항이고, 두가지 확인부탁드립니다.
