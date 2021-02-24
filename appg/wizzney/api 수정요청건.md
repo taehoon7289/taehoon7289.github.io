@@ -138,3 +138,8 @@ parameter : {"phone":"01050957289"}
 1. 개인정보 확인('/api/myPage/myUserInfo/detail') parameter: {havePwYn: 0, pw: "qwer1234@"} 비밀번호가 일치하는경우이지만, {"resultCode":null,"resultMsg":null,"userInfo":null} 응답오며, 비밀번호가 일치하지 않는경우, {"resultCode":"9999","resultMsg":"Fail","userInfo":null} 로 오고 있어서 확인 요청.
 
 2. 개인정보수정관련하여 본인인증시 ('/api/auth/niceAuthPop') 호출 parameter: {"callType":1,"rtnUrl":"http://106.240.232.36:8081/my-info/success","failRtnUrl":"http://106.240.232.36:8081/my-info/fail"} 로 호출할경우, https://black-payment.wizzney.com/api/auth/niceAuthSuccess로 페이지 이동하고 있음. callType: 0 인 회원가입 경우엔 정상적으로 rtnUrl 로 이동하고 있음.
+
+3. 파티결제완료페이지(/api/cash/paymentResult) 호출시 {"timestamp":1614146815100,"status":500,"error":"Internal Server Error","message":"nested exception is org.apache.ibatis.type.TypeException: Could not set parameters for mapping: ParameterMapping{property='POid', mode=IN, javaType=class java.lang.String, jdbcType=null, numericScale=null, resultMapId='null', jdbcTypeName='null', expression='null'}. Cause: org.apache.ibatis.type.TypeException: Error setting null for parameter #2 with JdbcType OTHER . Try setting a different JdbcType for this parameter or a different jdbcTypeForNull configuration property. Cause: java.sql.SQLException: 부적합한 열 유형: 1111","path":"/api/cash/paymentResult"} 발생하고 있어서 확인요청드립니다.
+parameter: {"POid":"WIZZNEY210216oRcQG6-95-20210224150624-100-100","partyNo":"95"}
+Authorization: eyJ0eXAiOiJqd3QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJXSVpaTkVZMjEwMjE2b1JjUUc2IiwiaWF0IjoxNjE0MTQ1MzQ0LCJleHAiOjE2MTQyMzE3NDR9.FZtz2z9nHIDpG9qFwgEHBTIIz2hCYc0gckEPX7oK3jc
+
