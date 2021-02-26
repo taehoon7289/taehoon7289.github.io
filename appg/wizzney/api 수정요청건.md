@@ -160,3 +160,6 @@ Authorization: eyJ0eXAiOiJqd3QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJXSVpaTkVZMjEwMjE3
 3. 회원탈퇴부분 확인하려는데 jungmin.nam@appg.co.kr 계정에 포인트 없애주실수 있나요? 회원탈퇴체크('/api/myPage/myUserInfo/withdrawal/check') 에서 {"resultCode":"9999","resultMsg":"사용 가능한 캐시가 있습니다."} 응답오고 있어서 요청드립니다.
 
 4. 개인정보변경('/api/myPage/myUserInfo/update') 수정하여 info 데이터중 authType: 4 로 받는거 확인했었는데, 해당계정으로 로그아웃/재로그인시 authType: 2 또는 1 로 오고 있어서 로그인시 data 확인 부탁드립니다. taehoon.kim@appg.co.kr 계정 authType: 2로 오고 있으며, 카카오 sns 계정은 authType: 1로 오고 있습니다.
+
+
+5. 생성한 파티 리스트 (/api/myPage/createParty/list) 조회시 현재 파티당 참여수/참여가능수 도 데이터바인딩해야되는거같은데 데이터 추가요청드립니다.
