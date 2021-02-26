@@ -163,3 +163,8 @@ Authorization: eyJ0eXAiOiJqd3QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJXSVpaTkVZMjEwMjE3
 
 
 5. 생성한 파티 리스트 (/api/myPage/createParty/list) 조회시 현재 파티당 참여수/참여가능수 도 데이터바인딩해야되는거같은데 데이터 추가요청드립니다.
+
+6. 생성한 파티 상세페이지('/api/myPage/party/detail') 호출시 {"resultCode":"9999","resultMsg":"Fail","party":null,"member":null} 로 오고 있어서 확인요청드립니다.
+parameter : {"partyNo":"98"}
+Authorization: eyJ0eXAiOiJqd3QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJXSVpaTkVZMjEwMjE2b1JjUUc2IiwiaWF0IjoxNjE0MzI0NDc4LCJleHAiOjE2MTQ0MTA4Nzh9.dVOZlVq2GESWCJFaF24TOqFrxGwU1-bP9ZXAyMtE6Z8
+
