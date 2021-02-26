@@ -149,3 +149,7 @@ profile: "https://black-file.wizzney.com/img/wizzney/20210265_20210224152139.jpg
 2. 개인정보변경('/api/myPage/myUserInfo/update') 한후 로그인(/api/user/login)한후에 profile: null 로 들어오고 있음.
 
 개인정보변경('/api/myPage/myUserInfo/update')으로 변경후에 나온 사항이고, 두가지 확인부탁드립니다.
+
+# 2021.02.26
+
+1. 개인정보변경('/api/myPage/myUserInfo/update') 확인시 응답데이터로 {"resultCode":"0000","resultMsg":"수정 되었습니다."} 로 추가데이터가 포함안되있는데 확인요청드립니다.
