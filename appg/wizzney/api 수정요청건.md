@@ -168,3 +168,10 @@ Authorization: eyJ0eXAiOiJqd3QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJXSVpaTkVZMjEwMjE3
 parameter : {"partyNo":"98"}
 Authorization: eyJ0eXAiOiJqd3QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJXSVpaTkVZMjEwMjE2b1JjUUc2IiwiaWF0IjoxNjE0MzI0NDc4LCJleHAiOjE2MTQ0MTA4Nzh9.dVOZlVq2GESWCJFaF24TOqFrxGwU1-bP9ZXAyMtE6Z8
 
+# 2021.03.02
+
+1. 생성한 파티 리스트 (검색포함) (/api/myPage/createParty/list) 데이터에 총개수(totalCnt) 도 포함 요청
+
+2. 생성한 파티 상세페이지 ('/api/myPage/party/detail') 호출시 party 데이터중 usePeriod 값이 포함되어있지 않아서 확인 요청 (api 규격서상 표기 되어있어서 확인차) 그리고 status 가 '이용기간 일수 또는 상태' 값인데 usePeriod 값으로 사용하면 되는건지 확인 요청
+
+
