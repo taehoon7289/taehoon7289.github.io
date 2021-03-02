@@ -174,4 +174,7 @@ Authorization: eyJ0eXAiOiJqd3QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJXSVpaTkVZMjEwMjE2
 
 2. 생성한 파티 상세페이지 ('/api/myPage/party/detail') 호출시 party 데이터중 usePeriod 값이 포함되어있지 않아서 확인 요청 (api 규격서상 표기 되어있어서 확인차) 그리고 status 가 '이용기간 일수 또는 상태' 값인데 usePeriod 값으로 사용하면 되는건지 확인 요청
 
+3. 파티 결제시 ('/api/cash/settlePayload') 500 error 발생하고 있어서 확인요청 드립니다.
+
+4. 현재 확인시 파티결제 실패하여도 (파티참여수) totalMemberCnt값이 증가하고 있는데 같이 확인부탁드립니다
 
