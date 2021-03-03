@@ -178,3 +178,10 @@ Authorization: eyJ0eXAiOiJqd3QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJXSVpaTkVZMjEwMjE2
 
 4. 현재 확인시 파티결제 실패하여도 (파티참여수) totalMemberCnt값이 증가하고 있는데 같이 확인부탁드립니다
 
+# 2021.03.03
+
+1. 참여한 파티 상세페이지('/api/myPage/participateParty/detail') 호출시 resultCode: "9999" 로 오고 있어서 확인 부탁드립니다.
+Authorization: eyJ0eXAiOiJqd3QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJXSVpaTkVZMjEwMjI0cFNzSXdPIiwiaWF0IjoxNjE0NzM3MjYxLCJleHAiOjE2MTQ4MjM2NjF9.Ajhmf0KP20X8-5lAHWZ6OHin9uTPRhqfKtZ_WFZBkgA
+parameter: {"partyNo":"105"}
+
+2. 참여한 파티 리스트 (검색포함) ('/api/myPage/participateParty/list') 호출시 리스트데이터가 partyNo가 중복되어 여러개 받아지고 있는데 데이터 확인 부탁드립니다.
