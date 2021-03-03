@@ -185,3 +185,10 @@ Authorization: eyJ0eXAiOiJqd3QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJXSVpaTkVZMjEwMjI0
 parameter: {"partyNo":"105"}
 
 2. 참여한 파티 리스트 (검색포함) ('/api/myPage/participateParty/list') 호출시 리스트데이터가 partyNo가 중복되어 여러개 받아지고 있는데 데이터 확인 부탁드립니다.
+
+3. 참여한 파티 상세페이지('/api/myPage/participateParty/detail') 호출시 결제자정보중 이름, 로그인타입(일반, 카카오, 네이버, 구글) 필요하여 추가 요청 드립니다.
+
+4. 결제완료페이지 ('/api/cash/paymentResult') 호출시 price 값이 결제금액과 맞지 않는데 확인 요청드립니다.
+1100원 파티결제에서 포인트 130 사용해서 957원 실결제후 결제완료한 값입니다.
+
+5. 위의 파티 partyNo: 115 결제후 참여한파티 상세('/api/myPage/participateParty/detail') 데이터중 party > usePoint: 0 으로 오고 있는데 130 포인트 사용한 결제라 데이터 확인 요청드립니다.
