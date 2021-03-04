@@ -211,3 +211,11 @@ response : {"timestamp":1614835720460,"status":500,"error":"Internal Server Erro
 4. 포인트리스트('/api/myPage/mywizzpoint/history') 검색단어 포함해서 호출시 500 error 발생하고 있어서 확인 부탁드립니다.
 parameter : {startNum: 1, endNum: 20, searchWord: "검색어"}
 {"timestamp":1614844066778,"status":500,"error":"Internal Server Error","message":"nested exception is org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'searchText' in 'class com.uniwill.wizzney.mypage.vo.MyWizzPointListRequestVo'","path":"/api/myPage/mywizzpoint/history"}
+
+# 2021.03.04
+
+1. 파티 결제 페이지('/api/party/subscribe') 호출시  resultCode: "9999", resultMsg: "Fail" 로만 오는데 확인요청
+
+2. 마이페이지 > 캐시/포인트 중 N 마크 여부는 어떻게 데이터 받아야하는지 확인
+
+3. 
