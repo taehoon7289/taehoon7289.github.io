@@ -212,7 +212,7 @@ response : {"timestamp":1614835720460,"status":500,"error":"Internal Server Erro
 parameter : {startNum: 1, endNum: 20, searchWord: "검색어"}
 {"timestamp":1614844066778,"status":500,"error":"Internal Server Error","message":"nested exception is org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'searchText' in 'class com.uniwill.wizzney.mypage.vo.MyWizzPointListRequestVo'","path":"/api/myPage/mywizzpoint/history"}
 
-# 2021.03.04
+# 2021.03.05
 
 1. 파티 결제 페이지('/api/party/subscribe') 호출시  resultCode: "9999", resultMsg: "Fail" 로만 오는데 확인요청
 
