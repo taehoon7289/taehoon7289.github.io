@@ -231,3 +231,8 @@ parameter : {startNum: 1, endNum: 20, searchWord: "검색어"}
 
 4. 생성한 파티 멤버 상세페이지('/api/myPage/party/member/detail') 호출시 몇개 데이터가 규격서랑 다르게 내려오는데 확인 부탁드립니다.
 
+5. 위즈톡 대화 목록(/api/chat/chatList) 호출시 파라미터로 buyerChatroomId 넣어야하는데 판매자 경우에 buyerChatroomId 를 어떻게 확인해야하나요?
+
+# 2021.03.08
+
+
