@@ -225,3 +225,9 @@ parameter : {startNum: 1, endNum: 20, searchWord: "검색어"}
 1. 위즈톡 대화 목록('/api/chat/chatList') 호출시 구매자쪽에서 한번이라도 메세지를 보내야 데이터 받아올수 있는데, 최초 위즈톡 입장시에 판매자 닉네임은 어떻게 받을수 있나요?
 
 2. 참여한 파티 취소/환불 편집(''/api/party/cancelRefundModify) 호출시 파라미터로 seq 데이터는 어디서 확인할수 있나요?
+
+3. 참여한 파티 분쟁취소('/api/party/cancelRefundDelete') 호출후에도 참여한 파티 상세페이지('/api/myPage/participateParty/detail') 데이터중 conflict status: 0 (진행중) 으로 오고 있어서 확인 부탁드립니다.
+참여한 파티 분쟁취소('/api/party/cancelRefundDelete') 호출시 parameter: { seq: 2 }
+
+4. 생성한 파티 멤버 상세페이지('/api/myPage/party/member/detail') 호출시 몇개 데이터가 규격서랑 다르게 내려오는데 확인 부탁드립니다.
+
