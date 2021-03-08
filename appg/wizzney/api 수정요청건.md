@@ -235,4 +235,5 @@ parameter : {startNum: 1, endNum: 20, searchWord: "검색어"}
 
 # 2021.03.08
 
+1. 댓글리스트 
 
