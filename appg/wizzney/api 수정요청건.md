@@ -238,3 +238,11 @@ parameter : {startNum: 1, endNum: 20, searchWord: "검색어"}
 1. 위즈톡 관련해서 추가데이터  
 
 2. 결제완료페이지(/api/cash/paymentResult) 에 파티정보관련한 표시부분의 데이터가 필요해서 추가요청드립니다.
+
+3. 참여한 파티리스트(/api/myPage/participateParty/list) 호출시 taehoon.kim@appg.co.kr과 kakao sns 계정에서 resultCode: "9999" 로 오고 있는데 확인부탁드립니다.
+
+4. 생성한 파티 멤버 상세페이지  (/api/myPage/party/member/detail) 호출시 resultCode:9999 로 오고 있어서 정상인지 확인부탁드립니다.
+Authorization: eyJ0eXAiOiJqd3QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJXSVpaTkVZMjEwMjE2b1JjUUc2IiwiaWF0IjoxNjE1MjczNDkyLCJleHAiOjE2MTUzNTk4OTJ9.s_HBxTJ51t0xnI21pEopTgBhNSdN9bDOMmykaJMa4EA
+parameter : {"partyNo":"141","memberNo":"1"}
+
+5. 참여한 파티 상세 (/api/myPage/participateParty/detail) 호출시 양도 파티인 경우 '결제승인' 여부를 알수 있는 데이터값이 필요할꺼같은데 추가 가능할까요?
