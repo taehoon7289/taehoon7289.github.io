@@ -235,5 +235,6 @@ parameter : {startNum: 1, endNum: 20, searchWord: "검색어"}
 
 # 2021.03.08
 
-1. 댓글리스트 
+1. 위즈톡 관련해서 추가데이터  
 
+2. 결제완료페이지(/api/cash/paymentResult) 에 파티정보관련한 표시부분의 데이터가 필요해서 추가요청드립니다.
