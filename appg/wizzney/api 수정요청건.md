@@ -246,3 +246,9 @@ Authorization: eyJ0eXAiOiJqd3QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJXSVpaTkVZMjEwMjE2
 parameter : {"partyNo":"141","memberNo":"1"}
 
 5. 참여한 파티 상세 (/api/myPage/participateParty/detail) 호출시 양도 파티인 경우 '결제승인' 여부를 알수 있는 데이터값이 필요할꺼같은데 추가 가능할까요?
+
+# 2021.03.09
+
+1. 생성한 파티 멤버 상세페이지(/api/myPage/party/member/detail) 호출시 conflict 데이터중 seq 가 필요할꺼같은데 추가 가능할까요? 생성한 파티 신청반려, 생성한 파티 신청반려 편집 api 호출시 seq 필요할꺼같은데 맞나요?
+
+2. 패널티 게시판 리스트 (검색포함) (/api/myPage/penalty) 호출시 searchWord 값을 넣어 호출하면 resultCode: 9999 발생하는데 확인부탁드립니다.
