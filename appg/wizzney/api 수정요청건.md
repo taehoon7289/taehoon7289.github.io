@@ -249,6 +249,6 @@ parameter : {"partyNo":"141","memberNo":"1"}
 
 # 2021.03.09
 
-1. 생성한 파티 멤버 상세페이지(/api/myPage/party/member/detail) 호출시 conflict 데이터중 seq 가 필요할꺼같은데 추가 가능할까요? 생성한 파티 신청반려, 생성한 파티 신청반려 편집 api 호출시 seq 필요할꺼같은데 맞나요?
+1. 7-7 생성한 파티 취소/환불, 7-8 생성한 파티 신청반려, 7-9 생성한 파티 신청반려 편집 api 호출시 seq 필요한데 어디서 확인할수 있는건가요?
 
 2. 패널티 게시판 리스트 (검색포함) (/api/myPage/penalty) 호출시 searchWord 값을 넣어 호출하면 resultCode: 9999 발생하는데 확인부탁드립니다.
