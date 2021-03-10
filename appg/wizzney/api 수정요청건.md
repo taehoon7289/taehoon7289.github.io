@@ -233,7 +233,7 @@ parameter : {startNum: 1, endNum: 20, searchWord: "검색어"}
 
 5. 위즈톡 대화 목록(/api/chat/chatList) 호출시 파라미터로 buyerChatroomId 넣어야하는데 판매자 경우에 buyerChatroomId 를 어떻게 확인해야하나요?
 
-# 2021.03.08
+# 2021.03.09
 
 1. 위즈톡 관련해서 추가데이터  
 
@@ -247,7 +247,7 @@ parameter : {"partyNo":"141","memberNo":"1"}
 
 5. 참여한 파티 상세 (/api/myPage/participateParty/detail) 호출시 양도 파티인 경우 '결제승인' 여부를 알수 있는 데이터값이 필요할꺼같은데 추가 가능할까요?
 
-# 2021.03.09
+# 2021.03.10
 
 1. 7-7 생성한 파티 취소/환불, 7-8 생성한 파티 신청반려, 7-9 생성한 파티 신청반려 편집 api 호출시 seq 필요한데 어디서 확인할수 있는건가요?
 
