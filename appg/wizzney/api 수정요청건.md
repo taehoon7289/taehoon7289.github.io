@@ -280,3 +280,6 @@ parameter : {"partyNo":"141","memberNo":"1"}
 parameter : {"page":1}
 Authorization: eyJ0eXAiOiJqd3QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJXSVpaTkVZMjEwMjI0cFNzSXdPIiwiaWF0IjoxNjE2MDI4OTk3LCJleHAiOjE2MTYxMTUzOTd9.4ZfK-6oZY9sM_1kn9xQyi-pphww-gLkLfA4Zf4--bGo
 
+3. 캐시 출금신청 페이지중 '위즈캐시출금정보', '입금받을계좌정보' 데이터를 받을수 있는 api 리스트중에 없는거 같은데 확인부탁드립니다.
+
+4. 
