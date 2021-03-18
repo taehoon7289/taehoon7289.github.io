@@ -1,0 +1,9 @@
+# 땅땅 반영사항
+관리자
+- admin-service :: codd_master
+- nuxt :: codd_master
+
+- easy-service :: master
+- codd_vue :: master
+- codd_ceo_vue :: codd_master
+- codd_pos_vue :: master
