@@ -282,4 +282,9 @@ Authorization: eyJ0eXAiOiJqd3QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJXSVpaTkVZMjEwMjI0
 
 3. 캐시 출금신청 페이지중 '위즈캐시출금정보', '입금받을계좌정보' 데이터를 받을수 있는 api 리스트중에 없는거 같은데 확인부탁드립니다.
 
-4. 
+4. 파티알림 내용확인, 삭제 확인했고, 출금계좌 확인 호출시 회원정보에 등록한 데이터있어도 데이터가 null 로 오고 있는데 확인부탁드립니다. 
+Authorization: eyJ0eXAiOiJqd3QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJXSVpaTkVZMjEwMjI0cFNzSXdPIiwiaWF0IjoxNjE2MDQ1NTI2LCJleHAiOjE2MTYxMzE5MjZ9.kkn3YoYRfIMdQ450NOfWf0V0b6sYAKgg88HCKsyN-Xo
+
+5. 회원정보수정에서 계좌정보 수정한뒤 /api/myPage/myWizzCash/withdrawAccountInfo 호출시
+500 error 발생하는데 로그 확인 부탁드립니다.
+nested exception is org.apache.ibatis.exceptions.TooManyResultsException: Expected one result (or null) to be returned by selectOne(), but found: 2
