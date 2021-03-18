@@ -267,4 +267,16 @@ parameter : {"partyNo":"141","memberNo":"1"}
 
 1. 4-2 파티 알림 설정 등록 한후, 파티 알림 설정한 내용를 확인하는 api 는 없나요? 그리고 파티알림설정 삭제도 필요할거 같은데 확인부탁드립니다.
 
-2. 
+2. 캐시 리스트 (검색포함)('/api/myPage/myWizzCash/cashHistory') 호출시 500 error 발생하고 있어서 로그확인부탁드립니다.
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: ORA-00904: "C"."PARTY_NO": 부적합한 식별자
+
+### The error may exist in class path resource [com/uniwill/wizzney/database/mypage/MyWizzCashMapper.xml]
+### The error may involve com.uniwill.wizzney.database.mypage.MyWizzCashMapper.getCashHistoryCount-Inline
+### The error occurred while setting parameters
+### SQL: SELECT       COUNT(SEQ)      FROM (       SELECT        (SELECT p.TITLE FROM TB_PARTY p WHERE p.PARTY_NO=c.PARTY_NO) AS title       FROM        TB_CASH_HISTORY       WHERE        WIZZNEY_ID = ?        AND DEL_YN = 'N'      )
+### Cause: java.sql.SQLSyntaxErrorException: ORA-00904: "C"."PARTY_NO": 부적합한 식별자
+
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: ORA-00904: "C"."PARTY_NO": 부적합한 식별자
+parameter : {"page":1}
+Authorization: eyJ0eXAiOiJqd3QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJXSVpaTkVZMjEwMjI0cFNzSXdPIiwiaWF0IjoxNjE2MDI4OTk3LCJleHAiOjE2MTYxMTUzOTd9.4ZfK-6oZY9sM_1kn9xQyi-pphww-gLkLfA4Zf4--bGo
+
