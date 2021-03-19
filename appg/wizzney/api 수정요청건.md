@@ -288,3 +288,9 @@ Authorization: eyJ0eXAiOiJqd3QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJXSVpaTkVZMjEwMjI0
 5. 회원정보수정에서 계좌정보 수정한뒤 /api/myPage/myWizzCash/withdrawAccountInfo 호출시
 500 error 발생하는데 로그 확인 부탁드립니다.
 nested exception is org.apache.ibatis.exceptions.TooManyResultsException: Expected one result (or null) to be returned by selectOne(), but found: 2
+
+# 2021.03.19
+
+1. 캐시 출금 신청('/api/myPage/myWizzCash/insertWithdraw') 호출시 출금액 파라미터가 필요할꺼같은데 규격서상 없어서 필요한게 맞는지 확인부탁드립니다.
+
+2. 메인페이지 메인('/api/myPage/myMain') userInfo 데이터중 userLvNm값으로 올수 있는 'BRONZE' 이외에 무슨 값 있는지 데이터값들 문의드립니다.
