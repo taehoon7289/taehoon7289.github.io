@@ -294,3 +294,9 @@ nested exception is org.apache.ibatis.exceptions.TooManyResultsException: Expect
 1. 캐시 출금 신청('/api/myPage/myWizzCash/insertWithdraw') 호출시 출금액 파라미터가 필요할꺼같은데 규격서상 없어서 필요한게 맞는지 확인부탁드립니다.
 
 2. 메인페이지 메인('/api/myPage/myMain') userInfo 데이터중 userLvNm값으로 올수 있는 'BRONZE' 이외에 무슨 값 있는지 데이터값들 문의드립니다.
+
+# 2021.03.22
+
+1. 미개발 api 확인요청
+
+2. 마이페이지 > 위즈톡게시판 알림부분값 데이터값 가져오는부분이랑 알림값 변경하는 api 추가 요청 드립니다
