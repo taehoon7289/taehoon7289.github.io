@@ -300,3 +300,8 @@ nested exception is org.apache.ibatis.exceptions.TooManyResultsException: Expect
 1. 미개발 api 확인요청
 
 2. 마이페이지 > 위즈톡게시판 알림부분값 데이터값 가져오는부분이랑 알림값 변경하는 api 추가 요청 드립니다
+
+3. 파티 알림 설정 등록('/api/party/updateHope') 후에 파티 알림 설정 정보(/api/myPage/myPartyHopeDetail), 파티 알림 리스트(/api/myPage/myHopeMatchPartyList) 호출시 500 error 발생하고 있어서 로그 확인부탁드립니다. 
+nested exception is org.apache.ibatis.exceptions.TooManyResultsException: Expected one result (or null) to be returned by selectOne(), but found: 3
+
+Authorization: eyJ0eXAiOiJqd3QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJXSVpaTkVZMjEwMjI0cFNzSXdPIiwiaWF0IjoxNjE2Mzc3OTkyLCJleHAiOjE2MTY0NjQzOTJ9.rUnxhJKtFNoWRyB4KYtvvyU1ZJLK_Uv-onSBlgEjhAQ
