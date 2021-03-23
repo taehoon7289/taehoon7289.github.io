@@ -305,3 +305,11 @@ nested exception is org.apache.ibatis.exceptions.TooManyResultsException: Expect
 nested exception is org.apache.ibatis.exceptions.TooManyResultsException: Expected one result (or null) to be returned by selectOne(), but found: 3
 
 Authorization: eyJ0eXAiOiJqd3QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJXSVpaTkVZMjEwMjI0cFNzSXdPIiwiaWF0IjoxNjE2Mzc3OTkyLCJleHAiOjE2MTY0NjQzOTJ9.rUnxhJKtFNoWRyB4KYtvvyU1ZJLK_Uv-onSBlgEjhAQ
+
+4. 6-5 참여파티 삭제('/api/participateParty/delete') 호출시 404 error 발생하는데 확인부탁드립니다.
+
+5. 6-7 참여한파티 결제 승인('/api/cash/partyPaymentApproval') 호출시 500 error 발생하고 있어서 로그확인 부탁드립니다.
+### Error updating database.  Cause: java.sql.SQLSyntaxErrorException: ORA-02289: 시퀀스가 존재하지 않습니다.↵↵### The error may involve com.uniwill.wizzney.database.cash.CashMapper.insertCashHistory-Inline↵### The error occurred while setting parameters↵### SQL: INSERT INTO TB_CASH_HISTORY(       SEQ       , WIZZNEY_ID       , TYPE       , ORDER_ID       , PARTY_NO       , EXIST_CASH       , CASH_AMT       , CASH       , DEL_YN       , REG_DT      )      VALUES      (       CASH_HISTORY_SEQ.NEXTVAL       , ?       , ?       , ?       , ?       , (SELECT CASH FROM TB_USER WHERE WIZZNEY_ID = ?)       , ?       , (SELECT CASH FROM TB_USER WHERE WIZZNEY_ID = ?) - ?       , 'N'       , SYSDATE      )↵### Cause: java.sql.SQLSyntaxErrorException: ORA-02289: 시퀀스가 존재하지 않습니다.↵↵; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: ORA-02289: 시퀀스가 존재하지 않습니다.
+
+Authorization: eyJ0eXAiOiJqd3QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJXSVpaTkVZMjEwMjI0cFNzSXdPIiwiaWF0IjoxNjE2MzkzMTkzLCJleHAiOjE2MTY0Nzk1OTN9.VmIp2ECSIWLsPF4k7XfauewAaaVqWm6SpoKFALazaok
+parameter : {"partyNo":"162"}
