@@ -7,3 +7,33 @@
 - codd_vue :: master
 - codd_ceo_vue :: codd_master
 - codd_pos_vue :: master
+
+create table tblChainDiscount
+(
+    chainDiscountNo int auto_increment comment '매장할인 PK'
+        primary key,
+    chainNo         int                                  not null comment '매장 PK',
+    orderTypes      varchar(10)                          null comment '할인주문유형 (배달: D, 포장: T, 홀: H) '',''로 구분',
+    amount          int                                  null comment '할인금액',
+    startDate       date                                 null comment '할인적용시작일',
+    endDate         date                                 null comment '할인적용종료일',
+    startHour       int                                  null comment '할인적용시작시간 hour',
+    startMinute     int                                  null comment '할인적용시작시간 minute',
+    endHour         int                                  null comment '할인적용종료시간 hour',
+    endMinute       int                                  null comment '할인적용종료시간 minute',
+    isEndDate       tinyint(1) default 0                 null comment '할인적용종료일 설정여부 (1: 설정, 0: 미정)',
+    regDate         datetime   default CURRENT_TIMESTAMP null comment '등록일'
+)
+    comment '매장별 할인 관리 테이블';
+
+create table tblChainDiscountMenu
+(
+    chainDiscountNo int not null comment '매장할인 PK',
+    chainNo         int not null comment '매장 PK',
+    menuNo          int not null comment '메뉴 PK',
+    menuCategoryNo  int not null comment '메뉴카테고리 PK',
+    constraint tblChainDiscountMenu_tblChainDiscount_chainDiscountNo_fk
+        foreign key (chainDiscountNo) references tblChainDiscount (chainDiscountNo)
+            on delete cascade
+)
+    comment '매장별 할인 메뉴 관리 테이블';
