@@ -313,3 +313,7 @@ Authorization: eyJ0eXAiOiJqd3QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJXSVpaTkVZMjEwMjI0
 
 Authorization: eyJ0eXAiOiJqd3QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJXSVpaTkVZMjEwMjI0cFNzSXdPIiwiaWF0IjoxNjE2MzkzMTkzLCJleHAiOjE2MTY0Nzk1OTN9.VmIp2ECSIWLsPF4k7XfauewAaaVqWm6SpoKFALazaok
 parameter : {"partyNo":"162"}
+
+# 2021.03.24
+
+1. 푸시발송시 각 푸시마다 json payload 값 서버에서 어떻게 보낼건지 정의된게 있나요?
