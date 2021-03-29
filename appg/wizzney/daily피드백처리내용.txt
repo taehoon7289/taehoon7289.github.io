@@ -19,6 +19,9 @@
  -> 이메일 인증 완료후 /main?isRoot=1#done 경로로 이동하면 됩니다.
 ex) https://black-mobile.wizzney.com/main?isRoot=1#done
 
+#43 (공통) 마이페이지_ 2뎁스
+-> 수정
+
 #56 (PC) 회원가입 _ 위즈니 자체 가입 _ 이메일 인증링크 오류
  -> 이메일 인증 완료후 /main?isRoot=1#done 경로로 이동하면 됩니다.
 ex) https://black-mobile.wizzney.com/main?isRoot=1#done
