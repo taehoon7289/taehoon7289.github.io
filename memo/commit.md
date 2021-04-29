@@ -46,10 +46,19 @@ admin_service
 2. 현재 tblChainOpen로 openText 생성 후 업데이트
 2. tblChainOpenTheDay 데이터 삭제
 
-sdf
-dsf
-sdf
-sdfsdfsdf
-sdfdsfsf
-sadfdsfsad
+
+https://git.404.co.kr/wizzney-group/test/issues/253
+-> 수정 done
+
+https://git.404.co.kr/wizzney-group/test/issues/252
+-> 수정 done
+
+https://git.404.co.kr/wizzney-group/test/issues/251
+-> 수정 done
+
+https://git.404.co.kr/wizzney-group/test/issues/242
+-> 수정 done
+
+
+
 
