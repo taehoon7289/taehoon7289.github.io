@@ -47,18 +47,4 @@ admin_service
 2. tblChainOpenTheDay 데이터 삭제
 
 
-https://git.404.co.kr/wizzney-group/test/issues/253
--> 수정 done
-
-https://git.404.co.kr/wizzney-group/test/issues/252
--> 수정 done
-
-https://git.404.co.kr/wizzney-group/test/issues/251
--> 수정 done
-
-https://git.404.co.kr/wizzney-group/test/issues/242
--> 수정 done
-
-
-
 
