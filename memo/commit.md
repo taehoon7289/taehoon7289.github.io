@@ -49,4 +49,19 @@ admin_service
 2. tblChainOpenTheDay 데이터 삭제
 
 
+footer.php ---
 
+careList.php --
+careDetail.php --
+care / moreList.php --
+
+jobList.php --
+jobDetail.php --
+job / moreList.php --
+
+eduList.php --
+eduDetail.php --
+edu / moreList.php --
+
+bookMark.php --
+jobDetailWorknet.php --
