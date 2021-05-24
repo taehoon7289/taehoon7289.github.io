@@ -22,10 +22,10 @@
 
 | 구분 | 규칙 | 예 |
 | --- | --- | --- |
-| 객체 변수 | '_' 사용금지  2개 이상 단어 조합 시 Camel 규칙 적용  의미 있는 명사로 작성 | GoodsDetails goodsDetails = displayService.getGoodsDetails(dispNo, goodsNo); |
+| 객체 변수 | '_' 사용금지  2개 이상 단어 조합 시 Camel 규칙 적용  의미 있는 명사로 작성 | `GoodsDetails goodsDetails = displayService.getGoodsDetails(dispNo, goodsNo);` |
 | 변수 |  | String[] goodsList; |
 | 필드 선언 |  | 상품번호 컬럼 : GOODS_NO → Model 필드 : goodsNo |
-| 메소드 선언 |  | getGoodsDetails(..) {..} |
+| 메소드 선언 |  | `getGoodsDetails(..) {..}` |
 | 상수 | '_' 사용금지  의미 있는 명사로 작성 | PAGE_SIZE |
 
 *2.2 업무 Mapper Interface 메소드명 규칙*
@@ -35,17 +35,17 @@
 
 | 동사 | 설명 | 예 |
 | --- | --- | --- |
-| insertXXX | 한 건의 데이터를 생성하는 경우 | void insertCode(Code) |
-| updateXXX | 한 건의 데이터를 변경하는 경우 | void updateCode(Code) |
-| deleteXXX | 한 건의 데이터를 삭제하는 경우 | void deleteCode(Code) |
-| selectXXX | 한 건의 데이터를 조회하는 경우 | CodeDTO selectCode(CodeDto) |
-| selectXXXList | 여러 건의 데이터를 조회하는 경우(List<DTO>리턴) | List selectCodeList(CodeDto) |
+| insertXXX | 한 건의 데이터를 생성하는 경우 | `void insertCode(Code)` |
+| updateXXX | 한 건의 데이터를 변경하는 경우 | `void updateCode(Code)` |
+| deleteXXX | 한 건의 데이터를 삭제하는 경우 | `void deleteCode(Code)` |
+| selectXXX | 한 건의 데이터를 조회하는 경우 | `CodeDTO selectCode(CodeDto)` |
+| selectXXXList | 여러 건의 데이터를 조회하는 경우(List<DTO>리턴) | `List selectCodeList(CodeDto)` |
 | updateXXXList | 여러 건의 데이터를 변경하는 경우 | `void updateCodeList(Code...)` |
-| deleteXXXList | 여러 건의 데이터를 삭제하는 경우 | int deleteCodeList(Code...) |
-| insertXXXList | 여러 건의 데이터를 생성하는 경우 | void insertCodeList(Code...) |
-| saveXXXList | 여러 건의 데이터를 생성, 변경, 삭제 하는 경우 | void saveCodeList(Code...) |
+| deleteXXXList | 여러 건의 데이터를 삭제하는 경우 | `int deleteCodeList(Code...)` |
+| insertXXXList | 여러 건의 데이터를 생성하는 경우 | `void insertCodeList(Code...)` |
+| saveXXXList | 여러 건의 데이터를 생성, 변경, 삭제 하는 경우 | `void saveCodeList(Code...)` |
 
-  
+
 **3.Model 개발 가이드**
 
 *3.1 Model의 역할*
