@@ -31,6 +31,7 @@
 *2.2 업무 Mapper Interface 메소드명 규칙*
 1. 업무 Mapper 클래스의 메소드 명은 기능에 따라 다음과 같은 형태로 작성하여야 한다.
 2. 업무 Mapper : 데이터 구조 종속적인 단위로 개발
+
 | 동사 | 설명 | 예 |
 | --- | --- | --- |
 | insertXXX | 한 건의 데이터를 생성하는 경우 | void insertCode(Code) |
