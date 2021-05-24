@@ -16,6 +16,8 @@
 | 폴더 | 폴더명은 full name 명명 |  |  | ex) admin(O) , ad(X) |
 | html, xml |  | 업무prefix.html |  | ex) stSearch.html |
 
+---
+
 **2. 코딩규칙(Coding Rule)**
 
 *2.1 공통 적용 규칙*
@@ -45,6 +47,7 @@
 | insertXXXList | 여러 건의 데이터를 생성하는 경우 | `void insertCodeList(Code...)` |
 | saveXXXList | 여러 건의 데이터를 생성, 변경, 삭제 하는 경우 | `void saveCodeList(Code...)` |
 
+---
 
 **3.Model 개발 가이드**
 
@@ -78,3 +81,5 @@ public class Board implements Serializable {
     private String contents;
 }
 ```
+ 
+---
