@@ -17,6 +17,7 @@
 | html, xml |  | 업무prefix.html |  | ex) stSearch.html |
 
 **2. 코딩규칙(Coding Rule)**
+
 *2.1 공통 적용 규칙*
 | 구분 | 규칙 | 예 |
 | --- | --- | --- |
