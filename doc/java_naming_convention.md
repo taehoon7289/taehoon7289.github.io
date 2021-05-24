@@ -19,6 +19,7 @@
 **2. 코딩규칙(Coding Rule)**
 
 *2.1 공통 적용 규칙*
+
 | 구분 | 규칙 | 예 |
 | --- | --- | --- |
 | 객체 변수 | '_' 사용금지  2개 이상 단어 조합 시 Camel 규칙 적용  의미 있는 명사로 작성 | GoodsDetails goodsDetails = displayService.getGoodsDetails(dispNo, goodsNo); |
@@ -28,6 +29,7 @@
 | 상수 | '_' 사용금지  의미 있는 명사로 작성 | PAGE_SIZE |
 
 *2.2 업무 Mapper Interface 메소드명 규칙*
+
 1. 업무 Mapper 클래스의 메소드 명은 기능에 따라 다음과 같은 형태로 작성하여야 한다.
 2. 업무 Mapper : 데이터 구조 종속적인 단위로 개발
 
@@ -42,3 +44,10 @@
 | deleteXXXList | 여러 건의 데이터를 삭제하는 경우 | int deleteCodeList(Code...) |
 | insertXXXList | 여러 건의 데이터를 생성하는 경우 | void insertCodeList(Code...) |
 | saveXXXList | 여러 건의 데이터를 생성, 변경, 삭제 하는 경우 | void saveCodeList(Code...) |
+
+** 3. Model 개발 가이드 **
+
+*3.1 Model의 역할*
+
+  
+  
