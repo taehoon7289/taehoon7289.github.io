@@ -40,14 +40,14 @@
 | deleteXXX | 한 건의 데이터를 삭제하는 경우 | void deleteCode(Code) |
 | selectXXX | 한 건의 데이터를 조회하는 경우 | CodeDTO selectCode(CodeDto) |
 | selectXXXList | 여러 건의 데이터를 조회하는 경우(List<DTO>리턴) | List selectCodeList(CodeDto) |
-| updateXXXList | 여러 건의 데이터를 변경하는 경우 | void updateCodeList(Code...) |
+| updateXXXList | 여러 건의 데이터를 변경하는 경우 | `void updateCodeList(Code...)` |
 | deleteXXXList | 여러 건의 데이터를 삭제하는 경우 | int deleteCodeList(Code...) |
 | insertXXXList | 여러 건의 데이터를 생성하는 경우 | void insertCodeList(Code...) |
 | saveXXXList | 여러 건의 데이터를 생성, 변경, 삭제 하는 경우 | void saveCodeList(Code...) |
 
-** 3. Model 개발 가이드 **
+  
+**3.Model 개발 가이드**
 
 *3.1 Model의 역할*
-
   
   
