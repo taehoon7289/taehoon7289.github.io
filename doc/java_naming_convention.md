@@ -85,6 +85,7 @@ public class Board implements Serializable {
 ---
 
 **3.2 Model 사용범위**
+
 model 은 정보를 담는 기능을 하기 때문에 모든 로직에서 자유롭게 사용할수 있다 
 <br>
 보통 데이터베이스의 테이블과 매칭하여 사용하고자 하는  경우가 많고 1개의 model객체만 생성하여  
@@ -104,6 +105,7 @@ Request  요청 파라미터 / 데이터베이스 결과값을 담는 경향이 
 프로젝트에서 Model 객체 사용을 가능한 권장한다
  
 *3.3 Model package 확장*
+
 model 객체는 프로젝트내에서 다수가 발생할수 있으며 이를 효율적으로 관리하기 위해서  package를 확장하여 사용하길 권장한다
 <br>
 ```
@@ -117,6 +119,7 @@ model 객체는 프로젝트내에서 다수가 발생할수 있으며 이를 �
 ```
  
 *3.4 조회 조건 하에서 get/post 에서의  model  개발가이드(API)*
+
 BO/FO에서 API로 전송하는  경우 가능한 get 방식으로 전송을 권장한다 
 <br>
 api 전송은 REST API 방식을 따르도록 가이드 하고 있으며 이는 get에 대해서  cache를 활용하기 위함이다 
@@ -127,6 +130,7 @@ API 서버 앞단에  API G/W 미들웨어를 연동하며 G/W에서   get 호�
 <br>
 
 *4. Annotation 기반 개발*
+
 업무 컴포넌트는 Annotation 기반으로 구현하며 Layer별로 사용하는 Annotation은 다음과 같다
 <br>
 @SpringBootApplication : 스프링 컴포넌트 스캔 및 스프링 부트 자동 구성을 활성화 한다.
