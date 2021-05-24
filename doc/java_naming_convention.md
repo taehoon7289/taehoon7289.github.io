@@ -7,7 +7,7 @@
 2. 2개 이상 단어 조합 시 Camel  규칙 적용
 
 
-| class 종류 ||| 파일명 구성  | 위치 패키지 또는 디렉토리  | 예 |
+| class 종류 || 파일명 구성  | 위치 패키지 또는 디렉토리  | 예 |
 |---|---|---|---|---|
 | Controller | api  | <업무명>ApiController.java  |  com.cname.<업무명><업무영역>.controller | DisplayApiController.java |
 |            | fo/bo | <업무명>Controller.java  |  com.cname.<업무명><업무영역>.controller | DisplayController.java |
