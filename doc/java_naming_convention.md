@@ -17,3 +17,13 @@
 | SQL map xml | api | <업무명>Mapper.xml | src/main/resources/mapper/ | DisplayMapper.xml |
 | 폴더 | 폴더명은 full name 명명 |  |  | ex) admin(O) , ad(X) |
 | html, xml |  | 업무prefix.html |  | ex) stSearch.html |
+
+**2. 코딩규칙(Coding Rule)**
+2.1 공통 적용 규칙
+| 구분 | 규칙 | 예 |
+| --- | --- | --- |
+| 객체 변수 | _ 사용금지  2개 이상 단어 조합 시 Camel 규칙 적용  의미 있는 명사로 작성 | GoodsDetails goodsDetails = displayService.getGoodsDetails(dispNo, goodsNo); |
+| 변수 |  | String[] goodsList; |
+| 필드 선언 |  | 상품번호 컬럼 : GOODS_NO → Model 필드 : goodsNo |
+| 메소드 선언 |  | getGoodsDetails(..) {..} |
+| 상수 | _ 사용금지  의미 있는 명사로 작성 | PAGE_SIZE |
