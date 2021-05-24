@@ -15,9 +15,8 @@
 | SQL map xml | api | <업무명>Mapper.xml | src/main/resources/mapper/ | DisplayMapper.xml |
 | 폴더 | 폴더명은 full name 명명 |  |  | ex) admin(O) , ad(X) |
 | html, xml |  | 업무prefix.html |  | ex) stSearch.html |
-<br>
+
 **2. 코딩규칙(Coding Rule)**
-<br>
 *2.1 공통 적용 규칙*
 | 구분 | 규칙 | 예 |
 | --- | --- | --- |
@@ -26,12 +25,12 @@
 | 필드 선언 |  | 상품번호 컬럼 : GOODS_NO → Model 필드 : goodsNo |
 | 메소드 선언 |  | getGoodsDetails(..) {..} |
 | 상수 | '_' 사용금지  의미 있는 명사로 작성 | PAGE_SIZE |
-<br>
+
 *2.2 업무 Mapper Interface 메소드명 규칙*
 <br>
 1. 업무 Mapper 클래스의 메소드 명은 기능에 따라 다음과 같은 형태로 작성하여야 한다.
 3. 업무 Mapper : 데이터 구조 종속적인 단위로 개발
-<br>
+
 | 동사 | 설명 | 예 |
 | --- | --- | --- |
 | insertXXX | 한 건의 데이터를 생성하는 경우 | void insertCode(Code) |
