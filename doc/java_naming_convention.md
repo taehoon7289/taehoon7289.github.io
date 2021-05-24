@@ -27,3 +27,18 @@
 | 필드 선언 |  | 상품번호 컬럼 : GOODS_NO → Model 필드 : goodsNo |
 | 메소드 선언 |  | getGoodsDetails(..) {..} |
 | 상수 | '_' 사용금지  의미 있는 명사로 작성 | PAGE_SIZE |
+
+*2.2 업무 Mapper Interface 메소드명 규칙*
+1. 업무 Mapper 클래스의 메소드 명은 기능에 따라 다음과 같은 형태로 작성하여야 한다.
+2. 업무 Mapper : 데이터 구조 종속적인 단위로 개발
+| 동사 | 설명 | 예 |
+| --- | --- | --- |
+| insertXXX | 한 건의 데이터를 생성하는 경우 | void insertCode(Code) |
+| updateXXX | 한 건의 데이터를 변경하는 경우 | void updateCode(Code) |
+| deleteXXX | 한 건의 데이터를 삭제하는 경우 | void deleteCode(Code) |
+| selectXXX | 한 건의 데이터를 조회하는 경우 | CodeDTO selectCode(CodeDto) |
+| selectXXXList | 여러 건의 데이터를 조회하는 경우(List<DTO>리턴) | List selectCodeList(CodeDto) |
+| updateXXXList | 여러 건의 데이터를 변경하는 경우 | void updateCodeList(Code...) |
+| deleteXXXList | 여러 건의 데이터를 삭제하는 경우 | int deleteCodeList(Code...) |
+| insertXXXList | 여러 건의 데이터를 생성하는 경우 | void insertCodeList(Code...) |
+| saveXXXList | 여러 건의 데이터를 생성, 변경, 삭제 하는 경우 | void saveCodeList(Code...) |
