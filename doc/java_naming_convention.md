@@ -83,3 +83,64 @@ public class Board implements Serializable {
 ```
  
 ---
+
+**3.2 Model 사용범위**
+model 은 정보를 담는 기능을 하기 때문에 모든 로직에서 자유롭게 사용할수 있다 
+<br>
+보통 데이터베이스의 테이블과 매칭하여 사용하고자 하는  경우가 많고 1개의 model객체만 생성하여  
+<br>
+Request  요청 파라미터 / 데이터베이스 결과값을 담는 경향이 있는데 이는  지양한다
+<br>
+1개의 model 객체만으로 로직을 구현시 API 통신및 BO/FO에 전달시 불필요한 json 정보들이 많을수 있다 
+<br>
+따라서 Request 요청에 대응하는 model 과 Response에 대응하는 model을 각각 분리하여 사용하기를 권장한다 
+<br>
+이럴경우 보통 Request/Response  model 객체간에 중복 정보에 해당하는 경우가 많은데 
+<br>
+이럴경우 중복된 정보들은 부모객체를 생성하여 상속하여 사용하면 
+<br>
+효율적으로 확장하여 활용할수 있다 
+<br>
+프로젝트에서 Model 객체 사용을 가능한 권장한다
+ 
+*3.3 Model package 확장*
+model 객체는 프로젝트내에서 다수가 발생할수 있으며 이를 효율적으로 관리하기 위해서  package를 확장하여 사용하길 권장한다
+<br>
+```
+예)  com.cname.lps.board.model package에서 다음과 같이 확장하여 model  객체를 관리한다 
+
+      com.cname.lps.board.model.user
+
+      com.cname.lps.board.model.file
+
+      com.cname.lps.board.model.notice
+```
+ 
+*3.4 조회 조건 하에서 get/post 에서의  model  개발가이드(API)*
+BO/FO에서 API로 전송하는  경우 가능한 get 방식으로 전송을 권장한다 
+<br>
+api 전송은 REST API 방식을 따르도록 가이드 하고 있으며 이는 get에 대해서  cache를 활용하기 위함이다 
+<br>
+API 서버 앞단에  API G/W 미들웨어를 연동하며 G/W에서   get 호출에 대해서 cache를 활용할수 있어 효율적이다 
+<br>
+따라서 parameter 갯수가 10개 미만인 경우 get 방식을 권장한다
+<br>
+
+*4. Annotation 기반 개발*
+업무 컴포넌트는 Annotation 기반으로 구현하며 Layer별로 사용하는 Annotation은 다음과 같다
+<br>
+@SpringBootApplication : 스프링 컴포넌트 스캔 및 스프링 부트 자동 구성을 활성화 한다.
+<br>
+@Controller : 업무 Controller 구현 시 사용, 역할 별 객체 생성 (@RequestMapping, @ResponseBody, @RequestBody)
+<br>
+@Service : 업무 Service 구현 시 사용, 역할 별 객체 생성
+<br>
+@Repository : 업무 DAO구현 시 사용, 역할 별 객체 생성
+<br>
+@Autowired : DI(Dependency Injection, 의존성 삽입)을 지원하며, 객체 초기화 시 연관된 객체를 삽입시킨다.
+<br>
+@Mapper : DAO interface를 구현하지 않아도 SQL map xml을 호출해준다. (단, DAO의 패키지명과 SQL map xml의 네임스페이스가 동일해야함)
+<br>
+이외 @Component, @Qualifier, @Resource 등의 여러 종류의 Annotation이 존재하며 프로젝트 진행 중 추가적으로 유용한 Annotation을 검토하여 사용할 수 있다.
+<br>
+DI : Dependency Injection(의존성 삽입), Spring IOC(Inversion of Control) Container에서 지원하는 runtime 시 객체 연관 참조 삽입 기술
