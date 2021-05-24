@@ -49,5 +49,32 @@
 **3.Model 개발 가이드**
 
 *3.1 Model의 역할*
-  
-  
+Model 객체는 Request/Response에 필요한 데이터를 담고 있는 객체이다
+<br>
+보통 VO, DTO  등 여러 이름으로 사용하고 있으나 현 프로젝트에서는 Model 로 통일한다 
+<br>
+model  객체는 주로  setter/getter 로 이루어진 POJO 객체로써 절대로  Bean객체로 생성하면 안된다 
+<br>
+model  객체를 사용함으로써 요청에 대한 데이터를 예상할수 있으며 또한 @Valid 같은 Validation Framework 활용도 가능하여 
+<br>
+효율적으로 개발할수 있다   
+<br>
+또한 @Data 같은   lombok 라이브러리도 활용할수 있다
+<br>
+
+```java
+@Data
+public class Board implements Serializable {
+ 
+    private int num;
+ 
+    @NotEmpty(message = "제목을 입력해 주세요")
+    @Size(min = 3, max = 200, message = "제목은 최소 {min}자에서 최대 {max}자까지만 가능합니다")
+    @ApiModelProperty(notes = "글제목", required = true)
+    private String title;
+ 
+    @NotEmpty(message = "내용을  입력해 주세요")
+    @Length(min = 5, message = "내용은 최소  {min}자리 입니다")
+    private String contents;
+}
+```
